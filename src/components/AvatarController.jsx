@@ -169,7 +169,7 @@ const AvatarController = () => {
   });
 
   return (
-    <group position-y={1}>
+    <group position-y={0.5}>
       <RigidBody
         ref={rigidBody}
         // type="dynamic"
