@@ -16,7 +16,7 @@ const Start = () => {
       <Html fullscreen>
         <div className="start">
           <div className="container-start">
-            <h1>Want to see my journey as creative front end developer</h1>
+            <h1>Want to see my journey as creative front end developer?</h1>
 
             <button class="button-start" role="button" onClick={handlePhase}>
               Start

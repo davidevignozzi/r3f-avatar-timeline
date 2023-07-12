@@ -5,6 +5,7 @@ import { KeyboardControls, Loader, useProgress } from '@react-three/drei';
 import { usePhases } from './stores/store';
 import Start from './components/Start';
 import { Experience } from './components/Experience';
+import ControlsInterface from './components/ControlsInterface';
 
 /**
  * Keyboard Controls
@@ -69,6 +70,7 @@ function App() {
           </Suspense>
         </Canvas>
         <Loader />
+        <ControlsInterface />
       </KeyboardControls>
     </>
   );

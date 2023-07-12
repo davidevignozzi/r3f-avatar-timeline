@@ -17,6 +17,7 @@ body {
   height: 100vh;
 }
 
+/* Start Section */
 .start {
   width: 100%;
   height: 100%;
@@ -33,6 +34,10 @@ body {
   align-items: center;
 }
 
+/**
+* Button Start
+*
+*/
 .button-start {
   --b: 3px; /* border thickness */
   --s: 0.45em; /* size of the corner */
@@ -48,9 +53,8 @@ body {
   outline: var(--b) solid #0000;
   outline-offset: 0.6em;
   font-size: 16px;
-
+  cursor: pointer;
   border: 0;
-
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -66,4 +70,42 @@ body {
 .button-start:active {
   background: var(--color);
   color: #fff;
+}
+
+/**
+* Interface
+*
+*/
+.interface {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.controls {
+  position: absolute;
+  bottom: 7.5%;
+  right: 35%;
+  width: 100%;
+}
+.controls .raw {
+  display: flex;
+  justify-content: center;
+}
+.controls .key {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border: 2px solid #222222;
+  background: #22222244;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.controls .key.active {
+  background: #22222299;
 }

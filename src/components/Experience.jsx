@@ -1,7 +1,7 @@
-import { Environment, Lightformer, OrbitControls } from '@react-three/drei';
+import { Environment, Lightformer } from '@react-three/drei';
+import { usePhases } from '../stores/store';
 import AvatarController from './AvatarController';
 import Hall from './Hall';
-import { usePhases } from '../stores/store';
 
 export const Experience = () => {
   const phase = usePhases((state) => state.phase);
