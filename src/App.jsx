@@ -70,7 +70,8 @@ function App() {
           </Suspense>
         </Canvas>
         <Loader />
-        <ControlsInterface />
+
+        {phase === 'isStarted' && <ControlsInterface />}
       </KeyboardControls>
     </>
   );
